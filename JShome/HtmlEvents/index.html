@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fight Club</title>
+    <style>
+        /*стили для меню*/
+        .menu ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 20px;
+            display: none;
+        }
+
+        .menu .title {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .menu .title::before {
+            content: '▶ ';
+            font-size: 80%;
+            color: green;
+        }
+
+        .menu.open .title::before {
+            content: '▼ ';
+        }
+
+        .menu.open ul {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+    <p></p>
+    <input type="button" id='delete' value="Нажми, чтобы спрятать">
+    <p></p>
+    <input name="number" id="inputAge">
+    <input id="buttonAge" type="submit" value="сейчас проверим!">
+    <p></p>
+    <div id="cars" class="menu">
+        <span class="title">Машины бывают разные!</span>
+        <ul>
+            <li>BMW</li>
+            <li>Porshe</li>
+            <li>KIA</li>
+        </ul>
+        <p></p>
+        <form action="" id="form1">
+            <input type="text" id="input1">
+            <input type="text" id="input2">
+        </form>
+        <form action="" id="form2" style="margin-top: 5px">
+            <input type="text" id="input21">
+            <input type="text" id="input22">
+        </form>
+        <button id="btn" style="margin-top: 5px">Push</button> -->
+
+    <div id="content"></div>
+    <h1>Правила бойцовского клуба</h1>
+    <div id="wrap">
+        <div class="rules rule1">
+            <h2>Первое правило Бойцовского клуба.</h2>
+            <p>Никому не рассказывать о Бойцовском клубе.</p>
+        </div>
+        <div class="rules rule2">
+            <h2>Второе правило Бойцовского клуба.</h2>
+            <p>Никогда никому не рассказывать о Бойцовском клубе.</p>
+        </div>
+        <div class="rules rule3">
+            <h2>Третье правило Бойцовского клуба.</h2>
+            <p>В схватке участвуют только двое.</p>
+        </div>
+        <div class="rules rule4">
+            <h2>Четвертое правило Бойцовского клуба.</h2>
+            <p>Не более одного поединка за один раз.</p>
+        </div>
+
+        <div class="rules rule5">
+            <h2>Пятое правило Бойцовского клуба.</h2>
+            <p>Бойцы сражаются без обуви и голые по пояс.</p>
+        </div>
+        <div class="rules rule6">
+            <h2>Шестое правило Бойцовского клуба.</h2>
+            <p>Поединок продолжается столько, сколько потребуется.</p>
+        </div>
+        <div class="rules rule7">
+            <h2>Седьмое правило Бойцовского клуба.</h2>
+            <p>Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок
+                окончен.</p>
+        </div>
+        <div class="rules rule8">
+            <h2>Восьмое и последнее правило Бойцовского клуба.</h2>
+            <p>Новичок обязан принять бой.</p>
+        </div>
+    </div>
+
+    <div id='carusel'></div>
+
+    <div>
+        outer
+        <div id="startEL">
+            START
+            <div>
+                inner 2
+                <div>
+                    inner 3
+                    <div>
+                        inner4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button id="BACK">BACK</button>
+    <button id="FORWAR">FORWAR</button>
+
+    <script src="hwJs 7.js">
+
+    </script>
+</body>
+
+</html>
