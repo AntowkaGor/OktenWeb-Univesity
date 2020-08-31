@@ -1,28 +1,51 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>MEGA FRUIT APP</h1>
+    <FruitsList :fruits="fruits"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import FruitsList from "@/components/Fruits/FruitsList";
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    FruitsList
+  },
+
+  data() {
+    return {
+      msg: 'hello',
+      fruits: [
+        {
+          name: 'Orange',
+          color: 'orange',
+          fresh: true
+        },
+        {
+          name: 'Apple',
+          color: 'green',
+          fresh: true
+        },
+        {
+          name: 'Mango',
+          color: 'red',
+          fresh: true
+        },
+        {
+          name: 'Banana',
+          color: 'yellow',
+          fresh: true
+        },
+      ]
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
