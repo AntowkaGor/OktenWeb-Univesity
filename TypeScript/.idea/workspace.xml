@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf40aacb-e758-46f7-acdf-47580bc915d6" name="Default Changelist" comment="" />
+    <list default="true" id="cf40aacb-e758-46f7-acdf-47580bc915d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/frontend-course-2020/homeworks/Anton.Goryshchenko_AntowkaGor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -33,6 +35,9 @@
       <option name="presentableId" value="Default" />
       <updated>1599492437265</updated>
       <workItem from="1599492438510" duration="295000" />
+      <workItem from="1603307328703" duration="1000" />
+      <workItem from="1603307881725" duration="944000" />
+      <workItem from="1603900797821" duration="69000" />
     </task>
     <servers />
   </component>
@@ -43,5 +48,11 @@
         <option value="$PROJECT_DIR$/hw/hw1.js" />
       </list>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="742" y="310" width="426" height="486" key="FileChooserDialogImpl" timestamp="1603900862680">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="742" y="310" width="426" height="486" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1603900862680" />
   </component>
 </project>
