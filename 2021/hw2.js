@@ -383,35 +383,35 @@
   - Створити масив автівок з полями id , model, producer ,tankVolume, horsePower, image. 15 об'єктів.
 Вивести увесь масив в документ застилізувавши його по 2 елементи в ряд
  */
-const cars = [
-    {id:1, model: 'a', producer: 'AA', tankVolume:1, horsePower:10, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:2, model: 'b', producer: 'BB', tankVolume:2, horsePower:20, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:3, model: 'c', producer: 'CC', tankVolume:3, horsePower:30, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:4, model: 'd', producer: 'DD', tankVolume:4, horsePower:40, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:5, model: 'e', producer: 'EE', tankVolume:5, horsePower:50, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:6, model: 'f', producer: 'FF', tankVolume:6, horsePower:60, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:7, model: 'q', producer: 'QQ', tankVolume:7, horsePower:70, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:8, model: 'w', producer: 'WW', tankVolume:8, horsePower:80, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:9, model: 'e', producer: 'EE', tankVolume:9, horsePower:90, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:10, model: 'r', producer: 'RR', tankVolume:10, horsePower:100, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:11, model: 't', producer: 'TT', tankVolume:11, horsePower:110, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:12, model: 'y', producer: 'YY', tankVolume:12, horsePower:120, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:13, model: 'u', producer: 'UU', tankVolume:13, horsePower:130, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-    {id:14, model: 'i', producer: 'II', tankVolume:14, horsePower:140, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
-];
-
-const enterText = document.querySelector('.some-text');
-
-for (let car of cars){
-    const div = document.createElement('div');
-    const  h1 = document.createElement('h1');
-    const p = document.createElement('p');
-
-    h1.innerHTML = `model:${car.model} <br> id:${car.id}`;
-    p.innerHTML = `producer: ${car.producer}<br>tankVolume: ${car.tankVolume}<br>horsePower: ${car.horsePower}`;
-    div.style.backgroundImage = `url(${car.url})`;
-
-    div.appendChild(h1);
-    div.appendChild(p);
-    enterText.appendChild(div);
-}
+// const cars = [
+//     {id:1, model: 'a', producer: 'AA', tankVolume:1, horsePower:10, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:2, model: 'b', producer: 'BB', tankVolume:2, horsePower:20, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:3, model: 'c', producer: 'CC', tankVolume:3, horsePower:30, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:4, model: 'd', producer: 'DD', tankVolume:4, horsePower:40, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:5, model: 'e', producer: 'EE', tankVolume:5, horsePower:50, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:6, model: 'f', producer: 'FF', tankVolume:6, horsePower:60, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:7, model: 'q', producer: 'QQ', tankVolume:7, horsePower:70, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:8, model: 'w', producer: 'WW', tankVolume:8, horsePower:80, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:9, model: 'e', producer: 'EE', tankVolume:9, horsePower:90, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:10, model: 'r', producer: 'RR', tankVolume:10, horsePower:100, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:11, model: 't', producer: 'TT', tankVolume:11, horsePower:110, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:12, model: 'y', producer: 'YY', tankVolume:12, horsePower:120, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:13, model: 'u', producer: 'UU', tankVolume:13, horsePower:130, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+//     {id:14, model: 'i', producer: 'II', tankVolume:14, horsePower:140, url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNNKFjzHwR6kltqbpR1SkCIDGe5esDia1g&usqp=CAU'},
+// ];
+//
+// const enterText = document.querySelector('.some-text');
+//
+// for (let car of cars){
+//     const div = document.createElement('div');
+//     const  h1 = document.createElement('h1');
+//     const p = document.createElement('p');
+//
+//     h1.innerHTML = `model:${car.model} <br> id:${car.id}`;
+//     p.innerHTML = `producer: ${car.producer}<br>tankVolume: ${car.tankVolume}<br>horsePower: ${car.horsePower}`;
+//     div.style.backgroundImage = `url(${car.url})`;
+//
+//     div.appendChild(h1);
+//     div.appendChild(p);
+//     enterText.appendChild(div);
+// }

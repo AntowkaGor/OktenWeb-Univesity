@@ -383,20 +383,17 @@
 // Частковий приклад реультату:
 //     let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
 //
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // let usersWithCities = [];
 // for (const user of usersWithId) {
-//     let userID = user.id;
-//     for (const citi of citiesWithId) {
-//         let citiId = citi.user_id
-//         if (userID === citiId){
-//          usersWithCities.push(user.address = citi)
-//          }
+//     for (const city of citiesWithId) {
+//        if (user.id === city.user_id){
+//             user.address = city;
+//            usersWithCities.push(user)
+//        }
 //     }
 //  }
 // console.log(usersWithCities);
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//
+
 // - створити в розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
 // let divWithId = document.createElement('div');
 // let divWithClass = document.createElement('div');
@@ -618,6 +615,39 @@
 
 // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
 // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
-// ****** при помощи fetch (как в примере) получить от jsonplaceholder все posts. Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments. Объеденить соответсвующий post с соответсвующими comment и вывести в браузер. Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
-// - взять json из задания 11 и превратить их обратно в объекты.
 
+// ****** при помощи fetch (как в примере) получить от jsonplaceholder все posts.
+// Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments.
+// Объеденить соответсвующий post с соответсвующими comment и вывести в браузер.
+// Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
+
+// fetch ('https://jsonplaceholder.typicode.com/posts')
+//     .then(res => res.json())
+//     .then(postJson => {
+//         console.log(postJson);
+//         for (const post of postJson) {
+//             let content = document.getElementById('content');
+//             let postDiv = document.createElement('div');
+//             postDiv.classList.add('postDiv')
+//
+//             for (const postKey in post) {
+//                let innerDiv = document.createElement('div');
+//                 innerDiv.innerText = `${post[postKey]}`
+//                 postDiv.appendChild(innerDiv)
+//             }
+//             content.appendChild(postDiv)
+//             fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
+//                 .then(res2 => res2.json())
+//                 .then(commentJson => {
+//                     console.log(commentJson);
+//                     for (const comment of commentJson) {
+//                         let p = document.createElement('p');
+//                         for (const commentKey in comment) {
+//                             p.innerText = `${comment[commentKey]}`
+//                             postDiv.appendChild(p)
+//                         }
+//
+//                     }
+//                 })
+//         }
+//     })
