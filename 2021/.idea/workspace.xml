@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c90b11d1-0173-45f1-abb2-e37bc07624ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw3.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw4.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -77,7 +76,8 @@
       <workItem from="1612887035137" duration="9473000" />
       <workItem from="1613047078180" duration="8210000" />
       <workItem from="1613077098344" duration="1610000" />
-      <workItem from="1613116231025" duration="11813000" />
+      <workItem from="1613116231025" duration="14197000" />
+      <workItem from="1613391838377" duration="2255000" />
     </task>
     <servers />
   </component>
@@ -89,6 +89,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="767" y="270" width="376" height="564" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1613118198752" />
+    <state x="498" y="95" width="914" height="914" key="CommitChangelistDialog2" timestamp="1613398635866">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="498" y="95" width="914" height="914" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1613398635866" />
+    <state x="742" y="309" width="426" height="486" key="FileChooserDialogImpl" timestamp="1613398849169">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="742" y="309" width="426" height="486" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1613398849169" />
     <state x="573" y="154" key="SettingsEditor" timestamp="1612533476842">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
