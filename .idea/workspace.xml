@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aa845e0-f139-4b32-a299-57a06e7845f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2021/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2021/hw4.js" beforeDir="false" afterPath="$PROJECT_DIR$/2021/hw4.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +23,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7aa845e0-f139-4b32-a299-57a06e7845f9" name="Default Changelist" comment="" />
@@ -34,7 +38,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613398852828</updated>
-      <workItem from="1613398853931" duration="133000" />
+      <workItem from="1613398853931" duration="7083000" />
+      <workItem from="1613593347069" duration="14242000" />
+      <workItem from="1613757654271" duration="4543000" />
+      <workItem from="1613839453579" duration="4940000" />
     </task>
     <servers />
   </component>
@@ -45,5 +52,11 @@
         <option value="$PROJECT_DIR$/TypeScript/hw/hw1.js" />
       </list>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1613842261449">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1613842261449" />
   </component>
 </project>
