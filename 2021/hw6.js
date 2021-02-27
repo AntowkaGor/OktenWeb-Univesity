@@ -212,7 +212,7 @@
 // const sorAgeUserDown = usersWithAddress.sort((a,b) => b.age - a.age)
 // console.log(sorAgeUserDown);
 
-// -- отсортировать его по имени пользователей ????????????
+// -- отсортировать его по имени пользователей 
 // const sortNameUsers = usersWithAddress.sort((a,b) => {
 //         if(a.name<b.name){
 //         return -1
@@ -222,7 +222,7 @@
 // })
 // console.log(sortNameUsers);
 
-// -- отсортировать его по имени пользователей в обратном порядке ?????????????????
+// -- отсортировать его по имени пользователей в обратном порядке
 // const sortNameUsersDown = usersWithAddress.sort((a,b) => {
 //     if(a.name<b.name){
 //         return -1
@@ -283,15 +283,16 @@
 
 
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
-//     Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5% ??????????????????????????????????????????
-// function modifyCars(cars, arg2 =1){
+//     Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
+// function modifyCars(cars){
 //     const newCar = [];
-//     for (let i = 0; i < cars.length; i+arg2) {
+//     for (let i = 0; i < cars.length; i+=2) {
 //       let car = cars[i];
 //         car.power = car.power + (car.power/100*10)
 //         car.price = car.price + (car.price/100*5)
+//         newCar.push(car)
 //     }
-//     return newCar.push(car)
+//     return newCar
 // }
 // const newCar = modifyCars(carsWithDriver);
 // console.log(newCar);
@@ -330,5 +331,5 @@
 //     result =`MinIndex = ${min}, MaxIndex = ${max}.`
 //     return result
 // }
-// const indexF = f(Arr,1);
+// const indexF = f(Arr,20);
 // console.log(indexF);
