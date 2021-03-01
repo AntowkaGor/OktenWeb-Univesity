@@ -11,6 +11,12 @@
             padding: 0;
             background: no-repeat;
         }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
         .some-text{
             background: #76c1e7;
             margin-left: auto;
@@ -28,7 +34,25 @@
             margin-top: 10px;
             margin-bottom: 5px;
         }
-
+        .hwJs7{
+            padding-top: 100px;
+            padding-left: 100px;
+        }
+        #forms{
+            margin-top: 50px;
+            width: 400px;
+            height: 200px;
+        }
+        #forms-table{
+            margin-top: 50px;
+            height: 100px;
+            width: 700px;
+        }
+        #filterUser{
+            margin-top: 50px;
+            height: 300px;
+            width: 700px;
+        }
     </style>
     <title>Learn JS</title>
 </head>
@@ -51,6 +75,101 @@
 <!--itin или forin - цик for in<br>-->
 <!--forof - цик for of<br>-->
 <!--ritar - обратный цикл for of <br>-->
+<div class="hwJs7">
+<p id="js-text">Lorem ipsum dolor sit.</p>
+    <button class="btn" type="button">Button</button>
+    <form action="" name="humanAge" style="margin-top: 20px">
+        <input type="number" name="age">
+        <input type="submit" value="CHECK" name="submit">
+    </form>
+    <ul style="margin-top: 20px" >
+        <li class="js-top-menu"><a href="#">меню</a>
+            <ul class="js-sub-menu">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </li>
+    </ul>
+    <fieldset id="forms">
+        <legend>Forms</legend>
+        <form action="" name="form1" style="margin-top: 20px">
+            <input type="number" name="age">
+            <input type="text" name="name">
+            <input type="submit" value="CHECK" name="submit">
+        </form>
+        <form action="" name="form2" style="margin-top: 20px">
+            <input type="number" name="age">
+            <input type="text" name="name">
+            <input type="submit" value="CHECK" name="submit">
+        </form>
+    </fieldset>
+
+    <fieldset id="forms-table">
+        <legend>TABLE</legend>
+        <form action="" name="tableJS" style="margin-top: 20px">
+            <input type="number" name="rows">
+            <input type="number" name="cols">
+            <input type="text" name="innerText">
+            <input type="submit" value="Create" name="createTable">
+        </form>
+    </fieldset>
+    <fieldset id="forms-table">
+        <legend>ERROR TEXT</legend>
+        <form action="" name="text" style="margin-top: 20px">
+            <input type="text" name="errorText">
+            <input type="submit" value="CHECK" name="checkText">
+        </form>
+    </fieldset>
+    <fieldset id="filterUser">
+        <legend>Filter Users</legend>
+        <form action="" name="textUser" style="margin-top: 20px">
+            <input type="checkbox" name="status">status<br>
+            <input type="checkbox" name="ages">ages<br>
+            <input type="checkbox" name="city">city<br>
+            <textarea name="filter" id="filterUsers" cols="80" rows="10"></textarea>
+        </form>
+    </fieldset>
+<div id="carusel"></div>
+</div>
+<!--<h1 >Правила бойцовского клуба</h1>-->
+<!--<p id="content">Список правил</p>-->
+<!--<div id="wrap">-->
+<!--    <div class="rules rule1">-->
+<!--        <h2>Первое правило Бойцовского клуба.</h2>-->
+<!--        <p>Никому не рассказывать о Бойцовском клубе.</p>-->
+<!--    </div>-->
+<!--    <div class="rules rule2">-->
+<!--        <h2>Второе правило Бойцовского клуба.</h2>-->
+<!--        <p>Никогда никому не рассказывать о Бойцовском клубе.</p>-->
+<!--    </div>-->
+<!--    <div class="rules rule3">-->
+<!--        <h2>Третье правило Бойцовского клуба.</h2>-->
+<!--        <p>В схватке участвуют только двое.</p>-->
+<!--    </div>-->
+<!--    <div class="rules rule4">-->
+<!--        <h2>Четвертое правило Бойцовского клуба.</h2>-->
+<!--        <p>Не более одного поединка за один раз.</p>-->
+<!--    </div>-->
+
+<!--    <div class="rules rule5">-->
+<!--        <h2>Пятое правило Бойцовского клуба.</h2>-->
+<!--        <p>Бойцы сражаются без обуви и голые по пояс.</p>-->
+<!--    </div>-->
+<!--    <div class="rules rule6">-->
+<!--        <h2>Шестое правило Бойцовского клуба.</h2>-->
+<!--        <p>Поединок продолжается столько, сколько потребуется.</p>-->
+<!--    </div>-->
+<!--    <div class="rules rule7">-->
+<!--        <h2>Седьмое правило Бойцовского клуба.</h2>-->
+<!--        <p>Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок-->
+<!--            окончен.</p>-->
+<!--    </div>-->
+<!--    <div class="rules rule8">-->
+<!--        <h2>Восьмое и последнее правило Бойцовского клуба.</h2>-->
+<!--        <p>Новичок обязан принять бой.</p>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 <script src="hw1.js"></script>
@@ -58,5 +177,7 @@
 <script src="hw4.js"></script>
 <script src="hw5.js"></script>
 <script src="hw6.js"></script>
+<script src="hw7.js"></script>
+
 </body>
 </html>
