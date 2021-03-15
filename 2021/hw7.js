@@ -234,61 +234,171 @@
 // 2й - оставляет старше 29 лет включительно
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
-let usersWithAddress = [
-    {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-    {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
-    {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
-    {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
-    {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
-    {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
-    {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
-    {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
-    {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
-    {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-    {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
-];
-const status = document.forms.textUser.status;
-const age = document.forms.textUser.ages;
-const city = document.forms.textUser.city;
-const filterUser = document.getElementById('filterUsers');
+// let usersWithAddress = [
+//     {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+//     {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
+//     {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+//     {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
+//     {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+//     {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
+//     {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
+//     {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+//     {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
+//     {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+//     {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
+// ];
+// let content = document.querySelector('#jsForUsers');
+// let status = document.forms.jsUsersForm.status
+// let ages = document.forms.jsUsersForm.ages
+// let city = document.forms.jsUsersForm.city
+// let btn = document.forms.jsUsersForm.button
+//
+//
+// function renderUsers(array) {
+//     array.forEach(element => {
+//         let p = document.createElement('p')
+//         p.innerHTML = JSON.stringify(element);
+//         content.appendChild(p);
+//     });
+//     return content;
+// }
+// renderUsers(usersWithAddress);
+//
+// btn.onclick = () => {
+//     let myArray = JSON.parse(JSON.stringify(usersWithAddress))
+//
+//     if (status.checked) myArray = myArray.filter(value => !value.status);
+//     if (ages.checked) myArray = myArray.filter(value => value.age >= 29);
+//     if (city.checked) myArray = myArray.filter(value => value.address.city === 'Kyiv');
+//
+//     content.innerText = '';
+//     content.appendChild(renderUsers(myArray));
+// }
 
-function renderUsers (array){
-    array.forEach( element=>{
-        filterUser.innerHTML = JSON.stringify(element)
-    })
-}
-renderUsers(usersWithAddress)
-
-status.onclick =() =>{
-    let myArray = JSON.parse(JSON.stringify(usersWithAddress))
-    if(status.checked) {
-        myArray = myArray.filter(value => {!value.status})
-    }else{
-     filterUser = " "
-    }
-}
-
-age.onclick =() =>{
-    let myArray = JSON.parse(JSON.stringify(usersWithAddress))
-    age.checked
-        ? myArray = myArray.filter(value => value.age >= 29)
-        : filterUser = " "
-}
-
-city.onclick =() =>{
-    let myArray = JSON.parse(JSON.stringify(usersWithAddress))
-    city.checked
-        ? myArray = myArray.filter(value => value.address.city === 'Kyiv')
-        : filterUser = " "
-}
-
-
-// *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
+// *** Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
 // при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
-// НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и  выводит первого ребенка. и тд.
-//     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
 //
+// let back = document.getElementById('back');
+// let forward = document.getElementById('forward');
+// let currentElement = document.getElementById('startEL');
 //
-// *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+// function domWalker(domElement) {
+//   const children = domElement.children
+//   const parent = domElement.parentElement
 //
+//   return {children: children, parent: parent}
+// }
 //
+// console.log(currentElement);
+//
+// back.onclick = () => {
+//   const {parent} = domWalker(currentElement)
+//   currentElement = parent ? parent : currentElement
+//   console.log(currentElement);
+// }
+//
+// forward.onclick = () => {
+//   const {children} = domWalker(currentElement)
+//   currentElement = children[0] ? children[0] : currentElement
+//   console.log(currentElement);
+// }
+
+// *** ?????????????????При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+// document.querySelector('.content').onmouseup = () => {
+//     const selection = getSelection().toString();
+//     for (const selectionElement of selection) {
+//         selectionElement.style.backgroundColor = red
+//     }
+//
+// };
+
+// - Дана textarea.
+//     В неё вводится текст.
+//     Сделайте так, чтобы после захода на эту страницу через некоторое время, введенный текст остался в textarea.
+// const textarea = document.getElementById('someText')
+// textarea.oninput = (ev) =>{
+//     localStorage.setItem('textarea', ev.target.value)
+// }
+// textarea.value = localStorage.getItem('textarea')
+
+// - Дана форма с инпутами, текстареа, чекбоксами, радио кнопочками, селектами и тп.
+//     Пользователь вводит какие-то данные и закрывает страницу (не факт, что он заполнил всю форму).
+// Сделайте так, чтобы при следующем заходе на страницу введенные им ранее данные стояли на своих местах.
+//     Сделайте ваш скрипт как можно более универсальным.
+// const lastForm = document.forms.lastTask
+//
+//  function saveForms(form){
+//     setLastForms(form);
+//  }
+// getLastForms(lastForm);
+//
+//  function setLastForms (f){
+//      for (let i = 0; i < f.length; i++) {
+//         const localForm = f[i]
+//
+//         if (localForm.type === 'checkbox' || localForm.type === 'radio')
+//             localForm.checked
+//                 ? localForm.value = true
+//                 : localForm.value = false
+//
+//          localStorage.setItem(localForm.id,localForm.value)
+//     }
+// }
+//
+// function getLastForms (tag){
+//     for (let i = 0; i < localStorage.length; i++) {
+//       if(localStorage.hasOwnProperty(tag.children[i].id)){
+//         tag.children[i].value = localStorage.getItem(tag.children[i].id);
+//         if (tag.children[i].value === 'true'){
+//             tag.children[i].setAttribute('checked', 'checked')
+//         }
+//
+//       }
+//     }
+// }
+
+// -Дан текстареа. В него можно ввести данные, нажать кнопку "сохранить" и они "фикисруются" (в хранилище), затем поредактировать их, затем еще поредактировать и возможно еще.....
+// Требование : хранить историю своих изменений (даже после перезагрузки страницы).
+// Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории (не забудьте!чекпоинт истории - нажатеи кнопки сохранить).
+// const text = document.getElementById('textBlock');
+// const left = document.getElementById('leftBtn');
+// const right = document.getElementById('rightBtn');
+// const save = document.getElementById('saveBtn');
+//
+// save.onclick = () =>{
+//     localStorage.setItem(localStorage.length + 1, text.value)
+// }
+//
+// left.onclick = () => {
+//     right.style.visibility = 'visible';
+//     let index;
+//     for (const key in localStorage) {
+//         if (localStorage.hasOwnProperty(key)) {
+//             if (localStorage.getItem(key) === text.value) {
+//                 index = key;
+//             }
+//         }
+//     }
+//     if (index === '1') {
+//         left.style.visibility = 'hidden';
+//         return;
+//     }
+//     text.value = localStorage.getItem(index - 1);
+// }
+//
+// right.onclick = () => {
+//     left.style.visibility = 'visible';
+//     let index;
+//     for (const key in localStorage) {
+//         if (localStorage.hasOwnProperty(key)) {
+//             if (localStorage.getItem(key) === text.value) {
+//                 index = key;
+//             }
+//         }
+//     }
+//     if (index === localStorage.length.toString()) {
+//         right.style.visibility = 'hidden';
+//         return;
+//     }
+//     text.value = localStorage.getItem(+index + 1);
+// }
