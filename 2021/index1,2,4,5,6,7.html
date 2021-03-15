@@ -53,6 +53,10 @@
             height: 300px;
             width: 700px;
         }
+        ::selection {
+           font-weight: bold;
+            background: #ffb7b7; /* WebKit/Blink Browsers */
+        }
     </style>
     <title>Learn JS</title>
 </head>
@@ -121,55 +125,73 @@
             <input type="submit" value="CHECK" name="checkText">
         </form>
     </fieldset>
-    <fieldset id="filterUser">
-        <legend>Filter Users</legend>
-        <form action="" name="textUser" style="margin-top: 20px">
-            <input type="checkbox" name="status">status<br>
-            <input type="checkbox" name="ages">ages<br>
-            <input type="checkbox" name="city">city<br>
-            <textarea name="filter" id="filterUsers" cols="80" rows="10"></textarea>
+    <div id="jsFilterUsers">
+        <form action="" name="jsUsersForm">
+            <input type="checkbox" name="status">status:False
+            <input type="checkbox" name="ages">ages:more29
+            <input type="checkbox" name="city">city:Kyiv
+            <input type="button" value="button" name="button">
         </form>
-    </fieldset>
-<div id="carusel"></div>
+        <div id="jsForUsers"></div>
+    </div>
+    <div id="carusel"></div>
+    <div>
+        outer
+        <div id="startEL">
+            START
+            <div>
+                inner 2
+                <div>
+                    inner 3
+                    <div>
+                        inner4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="back">BACK</button>
+    <button id="forward">FORWARD</button>
 </div>
-<!--<h1 >Правила бойцовского клуба</h1>-->
-<!--<p id="content">Список правил</p>-->
-<!--<div id="wrap">-->
-<!--    <div class="rules rule1">-->
-<!--        <h2>Первое правило Бойцовского клуба.</h2>-->
-<!--        <p>Никому не рассказывать о Бойцовском клубе.</p>-->
-<!--    </div>-->
-<!--    <div class="rules rule2">-->
-<!--        <h2>Второе правило Бойцовского клуба.</h2>-->
-<!--        <p>Никогда никому не рассказывать о Бойцовском клубе.</p>-->
-<!--    </div>-->
-<!--    <div class="rules rule3">-->
-<!--        <h2>Третье правило Бойцовского клуба.</h2>-->
-<!--        <p>В схватке участвуют только двое.</p>-->
-<!--    </div>-->
-<!--    <div class="rules rule4">-->
-<!--        <h2>Четвертое правило Бойцовского клуба.</h2>-->
-<!--        <p>Не более одного поединка за один раз.</p>-->
-<!--    </div>-->
+<h1 >Правила бойцовского клуба</h1>
 
-<!--    <div class="rules rule5">-->
-<!--        <h2>Пятое правило Бойцовского клуба.</h2>-->
-<!--        <p>Бойцы сражаются без обуви и голые по пояс.</p>-->
-<!--    </div>-->
-<!--    <div class="rules rule6">-->
-<!--        <h2>Шестое правило Бойцовского клуба.</h2>-->
-<!--        <p>Поединок продолжается столько, сколько потребуется.</p>-->
-<!--    </div>-->
-<!--    <div class="rules rule7">-->
-<!--        <h2>Седьмое правило Бойцовского клуба.</h2>-->
-<!--        <p>Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок-->
-<!--            окончен.</p>-->
-<!--    </div>-->
-<!--    <div class="rules rule8">-->
-<!--        <h2>Восьмое и последнее правило Бойцовского клуба.</h2>-->
-<!--        <p>Новичок обязан принять бой.</p>-->
-<!--    </div>-->
-<!--</div>-->
+<div id="wrap" class="content" >
+    <div class="rules rule1">
+        <h2>Первое правило Бойцовского клуба.</h2>
+        <p>Никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule2">
+        <h2>Второе правило Бойцовского клуба.</h2>
+        <p>Никогда никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule3">
+        <h2>Третье правило Бойцовского клуба.</h2>
+        <p>В схватке участвуют только двое.</p>
+    </div>
+    <div class="rules rule4">
+        <h2>Четвертое правило Бойцовского клуба.</h2>
+        <p>Не более одного поединка за один раз.</p>
+    </div>
+
+    <div class="rules rule5">
+        <h2>Пятое правило Бойцовского клуба.</h2>
+        <p>Бойцы сражаются без обуви и голые по пояс.</p>
+    </div>
+    <div class="rules rule6">
+        <h2>Шестое правило Бойцовского клуба.</h2>
+        <p>Поединок продолжается столько, сколько потребуется.</p>
+    </div>
+    <div class="rules rule7">
+        <h2>Седьмое правило Бойцовского клуба.</h2>
+        <p>Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок
+            окончен.</p>
+    </div>
+    <div class="rules rule8">
+        <h2>Восьмое и последнее правило Бойцовского клуба.</h2>
+        <p>Новичок обязан принять бой.</p>
+    </div>
+</div>
+
 
 
 <script src="hw1.js"></script>
