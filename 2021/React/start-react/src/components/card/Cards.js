@@ -1,40 +1,14 @@
 import React from 'react';
+import {Card} from './Card'
 
-function Cards (props) {
+export function Cards (props) {
     return (
         <div>
             <ul>
-                <li>
-                    <h2>{props.title}</h2>
-                    <div>
-                        <div>
-                            <button><svg height={10px} width={10px}</button>
-                        </div>
-                        <img src="#" alt="{props.title}"/>
-                    </div>
-                    <p>{props.text}</p>
-                </li>
-                <li>
-                    <h2>{props.title}</h2>
-                    <div>
-                        <div>
-                            <button><svg height={10px} width={10px}</button>
-                        </div>
-                        <img src="#" alt="{props.title}"/>
-                    </div>
-                    <p>{props.text}</p>
-                </li>
-                <li>
-                    <h2>{props.title}</h2>
-                    <div>
-                        <div>
-                            <button><svg height={10px} width={10px}></button>
-                        </div>
-                        <img src="#" alt="{props.title}"/>
-                    </div>
-                    <p>{props.text}</p>
-                </li>
-            </ul>
+                <Card title='title1' text='some text...'/>
+                <Card title='title2' text='some text...'/>
+                <Card title='title3' text='some text...'/>
+             </ul>
         </div>
     );
 }

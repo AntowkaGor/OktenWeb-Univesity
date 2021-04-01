@@ -1,47 +1,38 @@
 /* Design inspiration:  https://dribbble.com/shots/1978243-Latest-News */
 
-$blue: #341cac;
 
 body, html {
     font-family: 'Montserrat', sans-serif;
-    background-color: $blue;
 }
 
 .card {
-    width:280px;
-    display: block;
-    margin: 60px auto;
-    box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
-    transition: .25s;
-
-&:hover {
-     box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
-     cursor: pointer;
-
-.button-primary {
-    transform: translate(10px, 0);
-}
-}
+    width: 280px;
+    margin: 60px ;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
-.card-header {
+.cardHeader {
     height: 150px;
-    width: 100%;
-    padding: 15px;
-    width:100%;
+    width: 270px;
+    padding: 5px;
     background-size:cover;
     color:#fff;
 }
 
-.card-header--title {
+.cardHeader--title {
+    text-align: left;
     text-transform: uppercase;
     margin: 0;
 }
 
-.card-body {
-    padding: 15px;
+.cardBody {
+    padding-top: 15px;
     background-color:#fff;
     width:100%;
+    padding-bottom: 40px;
+    font-size: 13px;
+    line-height: 1.8;
 }
 
 .date {
@@ -50,31 +41,5 @@ body, html {
     color: grey;
 }
 
-.body-content {
-    padding-bottom: 40px;
-    font-size: 13px;
-    line-height: 1.8;
-}
-
-.button-primary {
-    border: none;
-    box-shadow: none;
-    font-family: inherit;
-    background-color:transparent;
-    color: $blue;
-    font-size: 15px;
-    transition:.25s;
-
-i{
-    padding-right:4px;
-}
-}
 
 
-.designer-link {
-    color:#fff;
-    text-align:center;
-    fon-size: 12px;
-    text-decoration: none;
-    display:block;
-}
