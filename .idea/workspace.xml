@@ -1,36 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7aa845e0-f139-4b32-a299-57a06e7845f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2021/hw5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/hw4.js" beforeDir="false" afterPath="$PROJECT_DIR$/2021/hw4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2021/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021/React/task6/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/2021/React/task6/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2021/React/task6/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2021/React/task6/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/AntowkaGor/OktenWeb-Univesity" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1oWOP4Y9BhsI6FkhdX4lmJBpJQ4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2021/hw6.js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2021/React/start-react/src/components/input" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="hw6.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="2021/hw6.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -46,7 +80,33 @@
       <workItem from="1613839453579" duration="4940000" />
       <workItem from="1613899748225" duration="4003000" />
       <workItem from="1614019867626" duration="1117000" />
-      <workItem from="1614023790936" duration="6140000" />
+      <workItem from="1614023790936" duration="21565000" />
+      <workItem from="1614284881509" duration="13000" />
+      <workItem from="1614285021511" duration="4015000" />
+      <workItem from="1614442840270" duration="12829000" />
+      <workItem from="1614536099727" duration="9441000" />
+      <workItem from="1614611902289" duration="5799000" />
+      <workItem from="1614704022900" duration="14716000" />
+      <workItem from="1615309911261" duration="11140000" />
+      <workItem from="1615728910083" duration="8489000" />
+      <workItem from="1615799562616" duration="14142000" />
+      <workItem from="1616332482625" duration="3816000" />
+      <workItem from="1616518379954" duration="2095000" />
+      <workItem from="1616525099971" duration="2326000" />
+      <workItem from="1616528125030" duration="1452000" />
+      <workItem from="1616529680015" duration="6701000" />
+      <workItem from="1616607368225" duration="8781000" />
+      <workItem from="1617016211439" duration="312000" />
+      <workItem from="1617022996422" duration="7377000" />
+      <workItem from="1617118964142" duration="853000" />
+      <workItem from="1617120612378" duration="5523000" />
+      <workItem from="1617209242517" duration="7936000" />
+      <workItem from="1617639331062" duration="4034000" />
+      <workItem from="1617649768869" duration="9029000" />
+      <workItem from="1617903390107" duration="5328000" />
+      <workItem from="1617911466018" duration="16000" />
+      <workItem from="1618166088868" duration="13250000" />
+      <workItem from="1618225787203" duration="760000" />
     </task>
     <servers />
   </component>
@@ -59,9 +119,57 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1613842261449">
+    <state x="417" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614195428411">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1613842261449" />
+    <state x="417" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1614195428411" />
+    <state x="646" y="350" width="618" height="404" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616618452681">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="646" y="350" width="618" height="404" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1616618452681" />
+    <state x="692" y="300" width="526" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616526653616">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="692" y="300" width="526" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1616526653616" />
+    <state x="742" y="309" width="426" height="486" key="FileChooserDialogImpl" timestamp="1614195424281">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="742" y="309" width="426" height="486" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1614195424281" />
+    <state width="607" height="831" key="GridCell.Tab.0.bottom" timestamp="1617118828828">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="607" height="831" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1617118828828" />
+    <state width="607" height="831" key="GridCell.Tab.0.center" timestamp="1617118828826">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="607" height="831" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1617118828826" />
+    <state width="607" height="831" key="GridCell.Tab.0.left" timestamp="1617118828825">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="607" height="831" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1617118828825" />
+    <state width="607" height="831" key="GridCell.Tab.0.right" timestamp="1617118828827">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="607" height="831" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1617118828827" />
+    <state x="448" y="187" key="SettingsEditor" timestamp="1617812205974">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="448" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1617812205974" />
+    <state x="989" y="188" width="678" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1615831132742">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="989" y="188" width="678" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1615831132742" />
+    <state x="740" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615911857317">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="740" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1615911857317" />
+    <state x="791" y="302" width="327" height="501" key="refactoring.ChangeSignatureDialog" timestamp="1615912300103">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="791" y="302" width="327" height="501" key="refactoring.ChangeSignatureDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1615912300103" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1616529242952">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1616529242952" />
   </component>
 </project>
