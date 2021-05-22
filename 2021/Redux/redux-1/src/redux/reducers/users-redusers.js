@@ -26,7 +26,7 @@ const initialState = {
             }
         }
 
-        case ON_REMOVE_FROME_DELATE:{
+        case ON_REMOVE_FROME_DELATE: {
             return{
                 ...state,
                 badEmployees: state.badEmployees.filter(el => el !== action.payload)

@@ -7,7 +7,8 @@ import  {
 
 
 const initialState = {
-    counter:0
+    counter:0,
+    isAllowedToChange: false,
 }
 
 const reducer = (state = initialState, action) =>{
